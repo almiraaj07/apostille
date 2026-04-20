@@ -166,8 +166,66 @@
     </div>
   </div>
 
-  <footer>
-    <p>&copy; 2026 GreenTick Apostille Attestation | All Rights Reserved</p>
-  </footer>
-</body>
-</html>
+ <footer>
+  <h2 style="margin-bottom:20px;">Our Locations</h2>
+  <div class="footer-cards">
+    <div class="footer-card">
+      <h3>Chennai</h3>
+      <p>180 - Prakasam Salai, Broadway,<br>Chennai - 600108.</p>
+    </div>
+    <div class="footer-card">
+      <h3>Trichy</h3>
+      <p>28/1, N R Complex, Pattabiraman Salai,<br>Anna Nagar, Trichy - 620017.</p>
+    </div>
+    <div class="footer-card">
+      <h3>Madurai</h3>
+      <p>No 7 - PTR Road, Narimedu,<br>Opp - IDFC Bank, Madurai - 625002.</p>
+    </div>
+    <div class="footer-card">
+      <h3>Coimbatore</h3>
+      <p>12, 4th South Cross St, Indira Nagar,<br>Kalapatti, Coimbatore - 641014.</p>
+    </div>
+  </div>
+  <p style="margin-top:25px;">&copy; 2026 GreenTick Apostille Attestation | All Rights Reserved</p>
+</footer>
+
+footer {
+  background: #1a73e8;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+footer h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.footer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-card {
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.footer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.footer-card h3 {
+  color: #1a73e8;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
