@@ -167,7 +167,7 @@
   </div>
 
  <footer>
-  <h2 style="margin-bottom:20px;">Our Locations</h2>
+  <h2>Our Locations</h2>
   <div class="footer-cards">
     <div class="footer-card">
       <h3>Chennai</h3>
@@ -186,26 +186,30 @@
       <p>12, 4th South Cross St, Indira Nagar,<br>Kalapatti, Coimbatore - 641014.</p>
     </div>
   </div>
-  <p style="margin-top:25px;">&copy; 2026 GreenTick Apostille Attestation | All Rights Reserved</p>
+  <p>&copy; 2026 GreenTick Apostille Attestation | All Rights Reserved</p>
 </footer>
 
+<style>
 footer {
   background: #1a73e8;
   color: #fff;
   padding: 40px 20px;
   margin-top: 40px;
+  text-align: center;
 }
 
 footer h2 {
   font-size: 1.6em;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .footer-cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
+  flex-wrap: nowrap;       /* keeps all 4 cards in one line */
+  overflow-x: auto;        /* adds horizontal scroll on small screens */
 }
 
 .footer-card {
@@ -217,6 +221,7 @@ footer h2 {
   width: 250px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: left;
+  flex: 0 0 auto;          /* prevents shrinking, keeps fixed width */
 }
 
 .footer-card:hover {
@@ -229,3 +234,6 @@ footer h2 {
   margin-bottom: 10px;
   font-size: 1.2em;
 }
+</style>
+
+
