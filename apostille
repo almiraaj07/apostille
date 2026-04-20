@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Free Website</title>
+  <meta charset="UTF-8">
+  <title>GreenTick Apostille Attestation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    header img {
+      width: 100%;
+      height: auto;
+      opacity: 0.8;
+    }
+    header .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    .profile {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fff;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      flex: 1 1 calc(50% - 20px);
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      min-width: 300px;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    footer {
+      background: #2e7d32;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>This site is hosted for free using GitHub Pages.</p>
+  <header>
+    <img src="greentick-head.jpg" alt="GreenTick Apostille Attestation">
+    <div class="overlay-text">
+      Welcome to the World of Green Tick Apostille Attestation
+    </div>
+  </header>
+
+  <!-- Company Profile Section -->
+  <div class="profile">
+    <p>GreenTick Apostille Attestation has a long-standing history of providing trusted document legalization services.</p>
+    <p>We specialize in Apostille certification recognized under the Hague Convention.</p>
+    <p>Our expertise extends to Embassy Attestation for non-Hague countries.</p>
+    <p>With years of experience, we ensure smooth processing for study, work, and migration purposes.</p>
+    <p>Our services cover educational, personal, and commercial documents.</p>
+    <p>We are committed to delivering reliable, efficient, and professional support for all your attestation needs.</p>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="cards-container">
+    <div class="card">
+      <h2>About Apostille</h2>
+      <ul>
+        <li>Apostille is an international certification under the Hague Convention of 1961.</li>
+        <li>Recognized in over 120 member countries.</li>
+        <li>Issued by the Ministry of External Affairs (MEA), India.</li>
+        <li>Required for study abroad, employment, migration, or business.</li>
+        <li>Processing time is usually 2–5 working days.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>About Embassy Attestation</h2>
+      <ul>
+        <li>Required for non-Hague Convention countries.</li>
+        <li>Verification through the respective foreign embassy.</li>
+        <li>Mandatory for UAE, Saudi Arabia, Qatar, Kuwait, China, etc.</li>
+        <li>Processing time varies (7–15 working days).</li>
+        <li>Provides legal recognition in non-Hague countries.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Major Apostille Countries</h2>
+      <p>USA, UK, France, Germany, Italy, Spain, Australia, Japan, South Korea, Netherlands, New Zealand, Switzerland, Belgium, Austria, Greece, Portugal, Turkey, Ireland, Denmark.</p>
+    </div>
+
+    <div class="card">
+      <h2>Major Attestation Countries</h2>
+      <p>UAE, Saudi Arabia, Qatar, Kuwait, Oman, Bahrain, China, Egypt, Malaysia, Singapore, Nepal, Pakistan, Afghanistan.</p>
+    </div>
+
+    <div class="card">
+      <h2>Commonly Attested Certificates</h2>
+      <ul>
+        <li><strong>Educational:</strong> Degrees, diplomas, transcripts.</li>
+        <li><strong>Personal:</strong> Birth, marriage, death certificates.</li>
+        <li><strong>Commercial:</strong> Contracts, company registration papers.</li>
+        <li><strong>Other:</strong> Police clearance, medical certificates.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>Trusted by thousands of clients worldwide.</li>
+        <li>Fast and reliable processing.</li>
+        <li>Expert guidance for complex cases.</li>
+        <li>Affordable and transparent pricing.</li>
+        <li>Dedicated customer support.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 GreenTick Apostille Attestation | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
