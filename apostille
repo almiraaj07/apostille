@@ -73,6 +73,14 @@
       margin-bottom: 15px;
       border-bottom: 2px solid #e0e0e0;
       padding-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2 i {
+      color: #1a73e8;
+      font-size: 1.2em;
     }
 
     .card ul, .card p {
@@ -90,6 +98,14 @@
       margin-top: 40px;
       font-size: 0.9em;
     }
+
+    /* Simple icon font via Unicode (no external library needed) */
+    .icon-globe::before { content: "🌐"; }
+    .icon-building::before { content: "🏛️"; }
+    .icon-flag::before { content: "🚩"; }
+    .icon-map::before { content: "🗺️"; }
+    .icon-certificate::before { content: "📜"; }
+    .icon-handshake::before { content: "🤝"; }
   </style>
 </head>
 <body>
@@ -113,7 +129,7 @@
   <!-- Cards Section -->
   <div class="cards-container">
     <div class="card">
-      <h2>About Apostille</h2>
+      <h2><i class="icon-globe"></i> About Apostille</h2>
       <ul>
         <li>Apostille is an international certification under the Hague Convention of 1961.</li>
         <li>Recognized in over 120 member countries.</li>
@@ -124,7 +140,7 @@
     </div>
 
     <div class="card">
-      <h2>About Embassy Attestation</h2>
+      <h2><i class="icon-building"></i> About Embassy Attestation</h2>
       <ul>
         <li>Required for non-Hague Convention countries.</li>
         <li>Verification through the respective foreign embassy.</li>
@@ -135,17 +151,17 @@
     </div>
 
     <div class="card">
-      <h2>Major Apostille Countries</h2>
+      <h2><i class="icon-flag"></i> Major Apostille Countries</h2>
       <p>USA, UK, France, Germany, Italy, Spain, Australia, Japan, South Korea, Netherlands, New Zealand, Switzerland, Belgium, Austria, Greece, Portugal, Turkey, Ireland, Denmark.</p>
     </div>
 
     <div class="card">
-      <h2>Major Attestation Countries</h2>
+      <h2><i class="icon-map"></i> Major Attestation Countries</h2>
       <p>UAE, Saudi Arabia, Qatar, Kuwait, Oman, Bahrain, China, Egypt, Malaysia, Singapore, Nepal, Pakistan, Afghanistan.</p>
     </div>
 
     <div class="card">
-      <h2>Commonly Attested Certificates</h2>
+      <h2><i class="icon-certificate"></i> Commonly Attested Certificates</h2>
       <ul>
         <li><strong>Educational:</strong> Degrees, diplomas, transcripts.</li>
         <li><strong>Personal:</strong> Birth, marriage, death certificates.</li>
@@ -155,7 +171,7 @@
     </div>
 
     <div class="card">
-      <h2>Why Choose Us</h2>
+      <h2><i class="icon-handshake"></i> Why Choose Us</h2>
       <ul>
         <li>Trusted by thousands of clients worldwide.</li>
         <li>Fast and reliable processing.</li>
