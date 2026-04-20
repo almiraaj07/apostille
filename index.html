@@ -13,10 +13,23 @@
       color: #333;
     }
     header {
-      background: #2e7d32;
-      color: #fff;
-      padding: 20px;
+      position: relative;
       text-align: center;
+      color: white;
+    }
+    header img {
+      width: 100%;
+      height: auto;
+      opacity: 0.8;
+    }
+    header .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     }
     section {
       padding: 20px;
@@ -42,8 +55,10 @@
 </head>
 <body>
   <header>
-    <h1>GreenTick Apostille Attestation</h1>
-    <p>Apostille Certificates and Embassy Attestation Services</p>
+    <img src="greentick-head.jpg" alt="GreenTick Apostille Attestation">
+    <div class="overlay-text">
+      Welcome to the World of Green Tick Apostille Attestation
+    </div>
   </header>
 
   <section>
