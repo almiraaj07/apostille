@@ -5,68 +5,90 @@
   <title>GreenTick Apostille Attestation</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #f9f9f9;
+      background-color: #f4f6f8;
       color: #333;
     }
+
     header {
       position: relative;
       text-align: center;
       color: white;
     }
+
     header img {
       width: 100%;
       height: auto;
-      opacity: 0.8;
+      opacity: 0.75;
     }
+
     header .overlay-text {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 2.2em;
-      font-weight: bold;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      font-size: 2.5em;
+      font-weight: 600;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     }
+
     .profile {
       text-align: center;
       padding: 40px 20px;
       background: #fff;
-      margin: 20px auto;
-      max-width: 900px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 30px auto;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
+
     .cards-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
     }
+
     .card {
-      flex: 1 1 calc(50% - 20px);
       background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px;
-      min-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 25px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    h2 {
-      color: #2e7d32;
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
     }
-    ul {
-      margin-left: 20px;
+
+    .card h2 {
+      color: #1a73e8;
+      font-size: 1.4em;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 8px;
     }
+
+    .card ul, .card p {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.95em;
+      color: #555;
+    }
+
     footer {
-      background: #2e7d32;
+      background: #1a73e8;
       color: #fff;
       text-align: center;
-      padding: 10px;
-      margin-top: 20px;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9em;
     }
   </style>
 </head>
