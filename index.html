@@ -93,42 +93,23 @@
     }
 
     .footer-cards {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
-    }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 25px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
 
-    .footer-card {
-      background: #fff;       /* white card background */
-      color: #333;            /* dark text for readability */
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      padding: 20px;
-      width: 250px;
-      text-align: left;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+.footer-card {
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .footer-contact {
-      margin-top: 25px;
-      font-size: 1em;
-    }
-
-    .footer-contact a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .footer-contact a:hover {
-      text-decoration: underline;
-    }
-
-    .footer-copy {
-      margin-top: 15px;
-      font-size: 0.9em;
-    }
   </style>
 </head>
 <body>
