@@ -100,202 +100,255 @@
   </script>
 </head>
 
+<!-- Corporate Styles -->
+<style>
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9fafc;
+    color: #333;
+  }
 
-  <!-- Styles -->
-  <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f4f6f8;
-      color: #333;
-    }
+  /* Header */
+  .site-header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
 
-    /* Header */
-    .site-header {
-      position: relative;
-      text-align: center;
-      color: #fff;
-    }
+  .site-header img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    display: block;
+  }
 
-    .site-header img {
-      width: 100%;
-      height: auto;
-      opacity: 0.75;
-      display: block;
-    }
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.65);
+    padding: 25px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    max-width: 90%;
+  }
 
-    .overlay-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0,0,0,0.6);
-      padding: 20px;
-      border-radius: 8px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-      max-width: 90%;
-    }
+  .overlay-text h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #ffeb3b;
+  }
 
+  .overlay-text p {
+    font-size: 1rem;
+    margin-top: 12px;
+    color: #fff;
+  }
+
+  /* Profile & Cards */
+  .profile, .card, .footer-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  }
+
+  .profile {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+  }
+
+  .profile h2 {
+    color: #1a73e8;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .card {
+    padding: 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card:hover, .footer-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+
+  .card h2, .footer-card h3 {
+    color: #1a73e8;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  /* Footer */
+  footer {
+    background: #1a73e8;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+  }
+
+  .footer-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+  .footer-card {
+    background: #f9fafb;
+    color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .footer-card h3 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+  }
+
+  .footer-contact {
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+  }
+
+  .footer-contact a {
+    color: #ffeb3b;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-copy {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
     .overlay-text h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      margin: 0;
+      font-size: 1.6rem;
     }
-
     .overlay-text p {
-      font-size: 1rem;
-      margin-top: 10px;
+      font-size: 0.9rem;
     }
-
-    /* Cards */
-    .profile, .card, .footer-card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    .profile {
-      text-align: center;
-      padding: 40px 20px;
-      margin: 30px auto;
-      max-width: 1000px;
-    }
-
     .cards-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: auto;
+      padding: 20px;
     }
-
-    .card {
-      padding: 25px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    footer {
+      padding: 30px 20px;
     }
+  }
 
-    .card:hover, .footer-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  @media (max-width: 480px) {
+    .overlay-text {
+      padding: 15px;
     }
-
-    .card h2, .footer-card h3 {
-      color: #1a73e8;
-      margin-bottom: 15px;
+    .overlay-text h1 {
+      font-size: 1.3rem;
     }
-
-   /* Footer */
-footer {
-  background: #1a73e8; /* solid brand blue */
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 40px;
-}
-
-.footer-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  max-width: 1200px;
-  margin: 20px auto;
-}
-
-.footer-card {
-  background: #f9fafb; /* light gray instead of white */
-  color: #222; /* dark text for strong contrast */
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.footer-card h3 {
-  color: #1a73e8; /* brand blue headings */
-  margin-bottom: 10px;
-}
-
-.footer-contact {
-  text-align: center;
-  margin-top: 20px;
-  color: #fff; /* keep contact text white */
-}
-
-.footer-contact a {
-  color: #ffeb3b; /* yellow links for visibility */
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.footer-contact a:hover {
-  text-decoration: underline;
-}
-
-.footer-copy {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #e0e0e0;
-}
-
-
-    /* Responsive tweaks */
-    @media (max-width: 768px) {
-      .overlay-text h1 {
-        font-size: 1.5rem;
-      }
-      .overlay-text p {
-        font-size: 0.9rem;
-      }
-      .cards-container {
-        padding: 20px;
-      }
-      footer {
-        padding: 20px;
-      }
+    .overlay-text p {
+      font-size: 0.8rem;
     }
-
-    @media (max-width: 480px) {
-      .overlay-text {
-        padding: 15px;
-      }
-      .overlay-text h1 {
-        font-size: 1.2rem;
-      }
-      .overlay-text p {
-        font-size: 0.8rem;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 
 <body>
   <!-- Header -->
   <header class="site-header">
     <img src="https://www.apostille-india.com/images/g-tick.jpg" 
-         alt="AL-MIRAAJ INTERNATIONALbanner showing trusted services" 
+         alt="Almiraaj International Apostille and Embassy Attestation Services Banner" 
          loading="lazy">
     <div class="overlay-text">
-      <h1><strong>Almiraaj Apostille Attestation</strong> – Trusted Apostille India Services</h1>
-      <p>Fast, reliable certificate legalization & embassy attestation across Chennai, Trichy, Madurai & Coimbatore</p>
+      <h1>Almiraaj International – Apostille & Embassy Attestation Experts</h1>
+      <p>Trusted certification services across Chennai, Trichy, Madurai & Coimbatore</p>
     </div>
   </header>
 
   <!-- Company Profile Section -->
   <div class="profile">
-    <p><strong>Almiraaj Apostille Attestation</strong> has a long-standing history of providing trusted document legalization services.</p>
-    <p>We specialize in <strong>Apostille certification</strong> recognized under the Hague Convention and <strong>Embassy Attestation</strong> for non-Hague countries.</p>
-    <p>With years of experience, we ensure smooth processing for study, work, and migration purposes across educational, personal, and commercial documents.</p>
-    <p>Visit us online at 
+    <h2>Corporate Apostille & Attestation Services</h2>
+    <p><strong>Almiraaj International</strong> is a leading agency for document legalization in Tamil Nadu.</p>
+    <p>We specialize in <a href="https://www.almiraaj.com/certificate-apostille-mea-in-chennai">MEA Apostille certification</a> recognized under the Hague Convention and <a href="https://www.almiraaj.com/embassy-attestation-in-chennai">Embassy Attestation</a> for non-Hague countries including <a href="https://www.almiraaj.com/uae-embassy-attestation-in-chennai">UAE</a> and <a href="https://www.almiraaj.com/kuwait-embassy-attestation-in-chennai">Kuwait</a>.</p>
+    <p>Our expertise ensures smooth processing for study, employment, migration, and business purposes across <a href="https://www.almiraaj.com/degree-certificate-apostille">educational</a>, <a href="https://www.almiraaj.com/personal-certificate-apostille">personal</a>, and <a href="https://www.almiraaj.com/commercial-certificate-apostille">commercial</a> documents.</p>
+    <p>Learn more at 
       <a href="https://almiraaj.com" target="_blank" rel="noopener" style="color:#1a73e8; font-weight:600; text-decoration:none;">
         almiraaj.com
       </a>.
     </p>
   </div>
+
+  <!-- FAQ Section -->
+  <div class="cards-container">
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>How long does apostille take?</strong> Usually 2–5 working days depending on the document type.</p>
+      <p><strong>Do you provide UAE embassy attestation?</strong> Yes, Almiraaj offers UAE embassy attestation in Chennai with expert support.</p>
+      <p><strong>Are commercial certificates accepted?</strong> Yes, we handle contracts, company registrations, and trade documents.</p>
+    </div>
+  </div>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does apostille take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Apostille processing usually takes 2–5 working days depending on the document type."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide UAE embassy attestation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Almiraaj International provides UAE embassy attestation services in Chennai with expert guidance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are commercial certificates accepted?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Almiraaj International handles commercial certificates including contracts, company registrations, and trade documents."
+        }
+      }
+    ]
+  }
+  </script>
+
 
   <!-- Cards Section -->
   <div class="cards-container">
